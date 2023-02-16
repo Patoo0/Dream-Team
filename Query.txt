@@ -1,0 +1,49 @@
+1- selezionare nome e cognome di tutti i partecipanti
+2- selezionare nome e cognome di tutti gli accompagnatori
+3- selezionare nome e codice delle attività presenti in una determinata data
+4- selezionare nome e cognome dei partecipanti di una determinata classe
+5- selezionare nome e cognome dei non partecipanti ad un attività
+6- selezionare nome e codice di tutte le attività approvate
+7- selezionare nome e codice di tutte le attività non approvate
+8- selezionare nome e codice di tutte le attività che  durano più di un giorno
+
+_______________________________________________________________
+
+SELECT nome, cognome
+FROM Alunno JOIN AlunniPartecipanti on CFAlunni = CFAlunni
+WHERE codAttività = “?”
+
+
+SELECT nome, cognome
+FROM Accompagnatori JOIN  AccompagnatoriPartecipanti on CFAccompagnatori = Accompagnatori
+WHERE codAttività = “?”
+
+
+SELECT nome, codAttività
+FROM Attività
+WHERE DataInizio = “?”
+
+
+SELECT nome, cognome
+FROM Alunno JOIN AlunniPartecipanti on CFAlunni = CFAlunni
+WHERE classe = “?”
+
+
+SELECT nome, cognome
+FROM Alunno 
+WHERE CFAlunni NOT IN AlunniPartecipanti.CFAlunni
+
+
+SELECT nome, codAttività
+FROM Attività
+WHERE Approvata = TRUE
+
+
+SELECT nome, codAttività
+FROM Attività
+WHERE Approvata = FALSE
+
+
+SELECT nome, codAttività
+FROM Attività
+WHERE DataInizio.day <> DataFine.day
