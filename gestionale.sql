@@ -82,6 +82,16 @@ CREATE TABLE `attività` (
   `DataFine` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- --------------------------------------------------------
+
+-- Struttura della tabella "credenziali"
+
+CREATE TABLE `credenziali` (
+  `Username` varchar(20) NOT NULL,
+  `password` varchar(15) NOT NULL,
+  
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
