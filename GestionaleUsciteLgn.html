@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static Template</title>
+  </head>
+  <body>
+    <h1>accedi al Gestionale Uscite</h1>
+    <form name = "f1">
+      User:&nbsp;&nbsp;&nbsp;<input id="txtUser" type="text" name="username" /><br/>
+      Password:&nbsp;&nbsp;&nbsp;<input id="txtPsw" type="password" name="passw" /><br/>
+      Ruolo:&nbsp;&nbsp;&nbsp;<select id="cmbRuolo" name="ruolo" />
+                                    <option value="">-- seleziona --</option>
+                                    <option value="1">Studente</option>
+                                    <option value="2">Amministratore</option>
+                              </select></br>
+      <input type="button" id="idBtnLogin" name="btnLogin" value="login" 
+        onClick="validazione()" />&nbsp;&nbsp;
+      <input type="reset" id="idBtnreset" name="btnReset" value="reset"/><br/>
+      
+      <div id="display" ></div>
+    </form>
+    <script>
+      
+      function validazione(){
+          if(document.getElementById("txtUser").value == ""){
+            msgError.innerHTML = "inserisci un nome utente";
+          }
+
+          console.log("result : "+result);
+
+      }
+    
+    </script>
+
+
+  </body>
+</html>
