@@ -1,6 +1,5 @@
 import tkinter as tk
 import mysql.connector
-import mysql
 from tkinter import ttk
 
 # Connessione al database
