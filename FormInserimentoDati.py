@@ -31,7 +31,6 @@ def inserisci_dati():
 finestra = tk.Tk()
 finestra.title("Accesso al database")
 
-
 # Campi del form
 label_nome = tk.Label(finestra, text="Nome:")
 label_nome.grid(row=0, column=0)
