@@ -16,3 +16,5 @@ print(cursore.rowcount)
 
 cursore = connessione.cursor()
 
+
+
