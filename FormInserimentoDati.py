@@ -54,3 +54,4 @@ bottone_inserisci.grid(row=3, column=1)
 # Esecuzione della finestra
 
 finestra.mainloop()
+
