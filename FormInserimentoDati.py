@@ -52,4 +52,5 @@ bottone_inserisci = tk.Button(finestra, text="Inserisci dati", command=inserisci
 bottone_inserisci.grid(row=3, column=1)
 
 # Esecuzione della finestra
+
 finestra.mainloop()
