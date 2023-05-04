@@ -47,6 +47,7 @@ label_classe.grid(row=2, column=0)
 campo_classe = tk.Entry(finestra)
 campo_classe.grid(row=2, column=1)
 
+
 # Bottone per inserire i dati nel database
 bottone_inserisci = tk.Button(finestra, text="Inserisci dati", command=inserisci_dati)
 bottone_inserisci.grid(row=3, column=1)
