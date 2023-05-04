@@ -15,3 +15,4 @@ connessione.commit()
 print(cursore.rowcount)
 
 cursore = connessione.cursor()
+
