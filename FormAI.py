@@ -25,6 +25,7 @@ def accesso():
             print("Accesso riuscito!")
         else:
             print("Email o password errate.")
+            print("GMail")
 
 # Funzione di registrazione al sistema
 def registrazione():
