@@ -20,6 +20,7 @@ WHERE codAttività = “?”
 
 
 SELECT nome, codAttività
+
 FROM Attività
 WHERE DataInizio = “?”
 
